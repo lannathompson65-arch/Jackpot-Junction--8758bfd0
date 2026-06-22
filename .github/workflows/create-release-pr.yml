@@ -35,7 +35,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: ${{ steps.nvm.outputs.NODE_VERSION }}
-      - uses: MetaMask/action-create-release-pr@v1
+      - uses: MetaMask/action-create-release-pr@c2131cc326cb7e95644b147a107ccb60af87eaf6 # v1.5.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
